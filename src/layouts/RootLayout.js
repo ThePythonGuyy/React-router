@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { NavLink, Outlet } from 'react-router-dom'
+import { NavLink, Outlet, Link } from 'react-router-dom'
+import Breadcrums from '../components/Breadcrums'
 
 const RootLayout = () => {
     return (
@@ -9,11 +10,12 @@ const RootLayout = () => {
 
                 <h1>CN</h1>
                 <NavLink to="/">Home</NavLink>
-                <NavLink to="/about">About</NavLink>
-                <NavLink to="/help">Help</NavLink>
+                <NavLink to="about">About</NavLink>
+                <NavLink to="help">Help</NavLink>
+                <NavLink to="careers">Careers</NavLink>
 
             </Header>
-        
+                <Breadcrums />
             <Main>
                 <Outlet />
             </Main>

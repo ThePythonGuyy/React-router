@@ -13,7 +13,7 @@ const HelpLayout = () => {
         </Help>
 
         <NavLink to='/help/contact'>Contact</NavLink>
-
+        <NavLink to='/help/contactForm'>Form</NavLink>
         <Main>
             <Outlet />
         </Main>
@@ -28,7 +28,7 @@ const HelpWrap = styled.div`
   display: flex;
   flex-direction: column;
   padding: 10px;
-  justifyconst careers = useRouteLoaderData()
+  /* justifyconst careers = useRouteLoaderData() */
     margin: 20px 0;
     text-decoration: none;
     font-weight: 550;
@@ -38,7 +38,7 @@ const HelpWrap = styled.div`
     max-width: 100px;
     text-align: center;
     
-  }
+  
 
   a.active{
     color: #e53a3a;
